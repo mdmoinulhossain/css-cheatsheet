@@ -41,3 +41,24 @@ div {
   /* row-gap: 50px; */
   gap: 50px 10px;
 }
+
+.style4 /* parent class */ {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.item1 /* applied in Child class*/ {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.style5 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.item2 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* Given height for removing default height */
+  height: auto !important;
+}
