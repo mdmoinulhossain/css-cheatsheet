@@ -22,9 +22,22 @@ div {
 .style1 {
   display: grid;
   grid-template-columns: auto auto auto;
+  /* It's 200px specified column width */
+  /* grid-template-columns: 200px 200px 200px; */
 }
 
-.style1 {
+.style2 {
   display: grid;
   grid-template-rows: auto;
+  /* It's 12px specified row height */
+  /* grid-template-rows: 12px 12px 12px; */
+}
+
+.style3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* Gap property contain row and column gap: 50px row gap and 10px column gap */
+  /* column-gap: 10px; */
+  /* row-gap: 50px; */
+  gap: 50px 10px;
 }
