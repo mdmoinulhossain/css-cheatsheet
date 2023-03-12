@@ -1,34 +1,34 @@
 /* ************ Mouse Copy Off  */
 html {
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    color: #cc0000;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #cc0000;
 }
 /* ***************************** */
 
 /* ************* Scroll behavior */
 @media (prefers-reduced-motion: no-preference) {
-    :root {
-      scroll-behavior: smooth;
-    }
+  :root {
+    scroll-behavior: smooth;
   }
+}
 /* **************************** */
 
 /* ************** Selection in html */
 ::selection {
-    background-color: var(--red);
-    color: var(--white);
-  }
+  background-color: var(--red);
+  color: var(--white);
+}
 /* ******************************** */
 
 /* *************** Font face diclaration */
 @font-face {
-    font-family: "Berkshire Swash";
-    src: url("./Fonts/BerkshireSwash-Regular.ttf");
-  }
+  font-family: "Berkshire Swash";
+  src: url("./Fonts/BerkshireSwash-Regular.ttf");
+}
 /* ************************************* */
 
 /* ****************** Bootstrap default focus off */
@@ -41,3 +41,20 @@ textarea:focus {
 }
 /* ********************************************* */
 
+/* ****************** Table Css */
+/* Table row height and width */
+table {
+  border-collapse: separate;
+  border-spacing: 5px 10px;
+}
+
+/* Collapse Table Borders */
+table {
+  border-collapse: collapse;
+}
+
+/* Responsive Table - table wrap into a div then-- */
+div {
+  overflow-x: auto;
+}
+/* ********************************************* */
