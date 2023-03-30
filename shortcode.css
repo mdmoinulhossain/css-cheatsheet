@@ -63,7 +63,8 @@ div {
 /* Custome Scrollbar -- */
 /* width */
 ::-webkit-scrollbar {
-  width: 20px;
+  width: 20px; /* width of vertical scrollbar */
+  height: 20px; /* height of horizontal scrollbar */
 }
 
 /* Track */
