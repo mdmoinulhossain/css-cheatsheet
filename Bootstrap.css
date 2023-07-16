@@ -22,3 +22,22 @@
   font-size: 55px;
   color: red;
 }
+
+/* Changing Boostrap toggle button */
+/* Button body */
+.navToggleBtn_body {
+  border-color: #90ee90 !important;
+}
+/* icon */
+.navToggleBtn {
+  font-size: 20px !important;
+  background-image: url("https://res.cloudinary.com/dnz6zg4on/image/upload/v1689509347/Frontend_images/qj01wo3csd2rdrwodeho.png");
+}
+/* area expend */
+.navbar .navbar-toggler[aria-expanded="true"] {
+  color: #9933cc !important;
+}
+/* on focus */
+.navbar .navbar-toggler:focus {
+  color: #ff4444;
+}
