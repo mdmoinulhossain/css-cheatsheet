@@ -150,3 +150,86 @@ Selectors {
   filter: brightness(110%);
 }
 /* *********************************************** */
+
+
+/* *********************************************** */
+/* Custom checkbox/radio */
+/* HTML
+<label class="custom-radio">
+  <input type="radio" name="friday" class="hidden-radio" />
+  <span class="custom-checkbox"></span> Select
+</label>
+```
+As like Checkbox
+```
+*/
+.custom-radio {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hidden-radio {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-right: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.hidden-radio:checked + .custom-checkbox:after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -60%);
+  font-size: 36px;
+  color: var(--deep-green);
+}
+
+/* 
+```
+Radio custome
+```
+*/
+.custom-radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hidden-radio {
+  display: none;
+}
+
+.custom-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #000; /* Checkbox border color */
+  border-radius: 4px;
+  margin-right: 8px;
+  display: inline-block;
+  position: relative;
+}
+
+.hidden-radio:checked + .custom-checkbox:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #000; /* Checkbox checkmark color */
+  border-radius: 2px;
+  display: block;
+}
+
+/* *********************************************** */
